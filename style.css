@@ -1,0 +1,384 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    background-image: url(./assets/PK-en-20240513-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-position: center center;
+    background-size: max(1200px 100vw);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+}
+
+nav {
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 138px;
+    position: relative;
+    z-index: 1;
+    top: 9px;
+}
+
+.flex button {
+    position: relative;
+    z-index: 10;
+    top: 9px;
+}
+
+.hero {
+    padding: 0 30px;
+    font-family: 'Martial Sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+    gap: 22px;
+    text-align: center;
+}
+
+.hero> :first-child {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero input {
+    position: relative;
+    z-index: 10;
+    padding: 12px 50px;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.line {
+    background-color: rgb(49, 46, 46);
+    height: 7px;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-red-sn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 7px 14px;
+}
+
+.btn-red {
+    background-color: rgba(229, 9, 20);
+    border: none;
+    color: white;
+    padding: 12px 50px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.secimg {
+    position: relative;
+    flex: 1 1 50%;
+}
+
+.secimg img {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg video {
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+    gap: 10px;
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+.faq {
+    color: #fff;
+    background-color: black;
+    padding: 34px;
+    font-size: 24px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqbox {
+    transition: all ease-out;
+    max-width: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    background-color: rgb(45, 45, 45);
+    padding: 24px;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+}
+
+footer {
+    color: #fff;
+    max-width: 70vw;
+    margin: auto;
+    padding: 34px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.footer-item {
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-item a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    .hero {
+        padding: 0 15px;
+    }
+
+    .first {
+        max-width: 90vw;
+    }
+
+    .faqbox {
+        max-width: 80vw;
+    }
+
+    footer {
+        max-width: 90vw;
+    }
+    .footer-item div{
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero> :first-child {
+        font-size: 36px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 1.25rem;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-red {
+        padding: 14px 30px;
+        font-size: 1.2rem;
+    }
+
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .first>div {
+        text-align: center;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .footer-item div{
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero> :first-child {
+        font-size: 28px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 14px;
+    }
+
+    .btn-red {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+
+    .hero input {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+
+    .first>div :nth-child(1) {
+        font-size: 36px;
+    }
+
+    .first>div :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .faqbox {
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-red {
+        width: 140px;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .hero-buttons input {
+        width: 150px;
+    }
+
+    .main img {
+        width: 95px;
+    }
+
+    section.first>div :nth-child(1) {
+        font-size: 32px;
+        font-weight: bolder;
+    }
+
+    section.first>div :nth-child(2) {
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .secimg {
+        order: 1;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer-item div{
+        padding-bottom: 10px;
+    }
+}
